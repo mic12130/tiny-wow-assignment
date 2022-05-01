@@ -25,7 +25,7 @@ void WeaponManager::add_weapon(const Weapon& weapon) {
   ThrowIfWeaponLimitExceed();
 }
 
-void WeaponManager::remove_weapon(unsigned index) {
+void WeaponManager::remove_weapon(int index) {
   weapons.erase(weapons.begin() + index);
 }
 

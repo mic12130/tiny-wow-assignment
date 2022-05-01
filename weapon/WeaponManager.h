@@ -15,7 +15,7 @@ class WeaponManager {
   void add_weapon(const Weapon& weapon);
 
   // Remove weapon at specific position
-  void remove_weapon(unsigned index);
+  void remove_weapon(int index);
 
   // Get weapon at specific position
   Weapon& get_weapon(int index);

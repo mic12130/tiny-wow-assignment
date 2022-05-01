@@ -10,7 +10,7 @@ struct Weapon {
   int id;
   double damage_ratio;
   double reflect_ratio;
-  unsigned remaining_times;
+  int remaining_times;
 
   bool IsActivated() const {
     return remaining_times != 0;
@@ -29,7 +29,7 @@ struct Weapon {
   }
 
   Weapon(int id, double damage_ratio, double reflect_ratio = 0.0,
-         unsigned remaining_times = 1)
+         int remaining_times = 1)
       : id(id),
         damage_ratio(damage_ratio),
         reflect_ratio(reflect_ratio),
